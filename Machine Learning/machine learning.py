@@ -11,7 +11,7 @@ from sklearn.metrics import confusion_matrix, classification_report, roc_auc_sco
 import matplotlib.pyplot as plt
 
 
-hotel = pd.read_csv("HOTELDATA.csv")
+hotel = pd.read_csv("hotel_bookings.csv")
 hotel["is_canceled"] = hotel["is_canceled"].astype(int)
 hotel = hotel.dropna()
 
@@ -120,3 +120,4 @@ all_features = num_cols + list(ohe_features)
 feat_importances = pd.Series(importances, index=all_features)
 feat_importances.nlargest(15).plot(kind='barh', figsize=(10,6), title="Top 15 features importantes")
 plt.show()
+
