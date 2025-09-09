@@ -1,1 +1,1 @@
-
+The source data inspection provides a structured overview of each field in the hotel booking dataset, evaluating its type, data quality, and analytical usefulness. It highlights key variables such as booking status, lead time, customer type, and average daily rate, while flagging issues like missing values or inconsistent entries in fields like country, agent, and company. This inspection ensures the dataset is clean, reliable, and ready for segmentation, forecasting, and performance analysis across hotels, booking channels, and customer behaviors.
